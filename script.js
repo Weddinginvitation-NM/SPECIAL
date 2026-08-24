@@ -345,12 +345,20 @@ if (shareBtn) {
             url: window.location.href
         };
 
-        if (navigator.share) {
-            try {
-                await navigator.share(shareData);
-            } catch (error) {
-                console.log("Share cancelled");
-            }
+      if (navigator.share) {
+    try {
+        await navigator.share(shareData);
+    } catch (error) {
+        console.log("Share failed:", error);
+
+        try {
+            await navigator.clipboard.writeText(window.location.href);
+            alert("Invitation link copied ❤️");
+        } catch (e) {
+            alert("Please copy this link: " + window.location.href);
+        }
+    }
+      }
         } else {
             await navigator.clipboard.writeText(window.location.href);
             alert("Invitation link copied! ❤️");
