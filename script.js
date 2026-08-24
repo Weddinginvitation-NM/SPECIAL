@@ -259,9 +259,9 @@ if (canvas) {
     );
 }
 
-/* =========================
+/* ======================
    WEDDING MUSIC
-========================= */
+====================== */
 
 const music = document.getElementById("weddingMusic");
 const musicBtn = document.getElementById("musicBtn");
@@ -271,13 +271,22 @@ if (music && musicBtn) {
     musicBtn.addEventListener("click", function () {
 
         if (music.paused) {
-            music.play();
-            musicBtn.innerHTML = "❚❚";
-            musicBtn.classList.add("playing");
+
+            music.play()
+                .then(function () {
+                    musicBtn.innerHTML = "♫";
+                    musicBtn.classList.add("playing");
+                })
+                .catch(function (error) {
+                    console.log("Music error:", error);
+                });
+
         } else {
+
             music.pause();
-            musicBtn.innerHTML = "♫";
+            musicBtn.innerHTML = "♪";
             musicBtn.classList.remove("playing");
+
         }
 
     });
