@@ -726,3 +726,205 @@ h1,h2,h3,.couple {
   color: #f7efdf;
 
   }
+/* =====================================
+   COUPLE NAME - PREMIUM CENTER CARD
+===================================== */
+
+.name-reveal {
+    position: fixed;
+    inset: 0;
+
+    z-index: 200;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 25px;
+
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(216,184,117,0.18),
+            transparent 45%
+        ),
+        #f5ecdc;
+}
+
+/* Name reveal active */
+
+.name-reveal.show {
+    display: flex;
+    animation: nameRevealIn 0.9s ease forwards;
+}
+
+@keyframes nameRevealIn {
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* =====================================
+   NAME CARD
+===================================== */
+
+.name-reveal::before {
+    content: "";
+
+    position: absolute;
+
+    width: min(88vw, 430px);
+    height: 360px;
+
+    background: #a9573f;
+
+    border: 2px solid #c9a45b;
+
+    border-radius: 24px;
+
+    box-shadow:
+        0 20px 50px rgba(60, 30, 20, 0.25),
+
+        inset 0 0 0 7px rgba(247,239,223,0.12),
+
+        inset 0 0 0 9px rgba(201,164,91,0.35);
+
+    z-index: -1;
+}
+
+
+/* =====================================
+   SMALL TEXT
+===================================== */
+
+.reveal-small {
+    color: #f7efdf;
+
+    font-size: 11px;
+
+    letter-spacing: 0.28em;
+
+    margin-bottom: 18px;
+
+    text-align: center;
+}
+
+
+/* =====================================
+   COUPLE NAME
+===================================== */
+
+.name-reveal h1 {
+
+    margin: 0;
+
+    text-align: center;
+
+    color: #fff8e8;
+
+    font-family:
+        "Cormorant Garamond",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(3.2rem, 14vw, 6rem);
+
+    line-height: 0.9;
+
+    font-weight: 500;
+
+    text-shadow:
+        0 3px 12px rgba(40,20,10,0.18);
+}
+
+
+/* Ampersand */
+
+.name-reveal h1 span {
+
+    display: block;
+
+    color: #d8b875;
+
+    font-size: 0.55em;
+
+    font-style: italic;
+
+    margin: 12px 0;
+}
+
+
+/* =====================================
+   DIVIDER
+===================================== */
+
+.reveal-divider {
+
+    width: 150px;
+
+    height: 1px;
+
+    margin: 25px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #d8b875,
+            transparent
+        );
+
+    position: relative;
+}
+
+
+.reveal-divider span {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform:
+        translate(-50%, -50%);
+
+    background: #a9573f;
+
+    color: #d8b875;
+
+    padding: 0 12px;
+
+    font-size: 16px;
+}
+
+
+/* =====================================
+   DATE
+===================================== */
+
+.reveal-date {
+
+    margin: 0;
+
+    color: #f7efdf;
+
+    font-size: 11px;
+
+    letter-spacing: 0.22em;
+
+    text-align: center;
+}
