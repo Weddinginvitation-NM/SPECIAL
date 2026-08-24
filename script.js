@@ -333,3 +333,28 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+
+const shareBtn = document.getElementById("shareBtn");
+
+if (shareBtn) {
+    shareBtn.addEventListener("click", async () => {
+
+        const shareData = {
+            title: "Nikita & Mahendra Wedding Invitation",
+            text: "💍 Nikita & Mahendra ki shaadi ka invitation dekhiye ❤️",
+            url: window.location.href
+        };
+
+        if (navigator.share) {
+            try {
+                await navigator.share(shareData);
+            } catch (error) {
+                console.log("Share cancelled");
+            }
+        } else {
+            await navigator.clipboard.writeText(window.location.href);
+            alert("Invitation link copied! ❤️");
+        }
+
+    });
+}
