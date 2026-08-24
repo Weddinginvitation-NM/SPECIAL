@@ -1482,3 +1482,31 @@ h1,h2,h3,.couple {
 .music-toggle.playing::before {
     content: "♫";
 }
+#musicToggle {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  left: auto !important;
+  bottom: auto !important;
+
+  width: 58px !important;
+  height: 58px !important;
+
+  border-radius: 50% !important;
+  background: #f7efe0 !important;
+  border: 2px solid #b98b3e !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  z-index: 99999 !important;
+  cursor: pointer !important;
+  box-shadow: 0 5px 15px rgba(0,0,0,.2) !important;
+}
+
+#musicToggle::before {
+  content: "♪";
+  font-size: 26px;
+  color: #9b563f;
+}
