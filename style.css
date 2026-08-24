@@ -1538,7 +1538,4 @@ h1,h2,h3,.couple {
     box-shadow: 0 5px 15px rgba(0,0,0,.2) !important;
 }
 
-/* Hide duplicate button */
-#musicToggle {
-    display: none !important;
 }
