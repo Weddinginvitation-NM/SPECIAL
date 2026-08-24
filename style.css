@@ -1400,3 +1400,52 @@ h1,h2,h3,.couple {
 
     text-align: center;
 }
+.countdown {
+    background: #783c31;
+    color: #f7efdf;
+}
+
+.countdown h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(3rem, 12vw, 5rem);
+    color: #f7efdf;
+    margin: 8px 0;
+}
+
+.countdown-date {
+    color: #d8b875;
+    font-family: "Noto Serif Devanagari", serif;
+}
+
+.timer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    width: min(100%, 500px);
+    margin-top: 35px;
+}
+
+.timer div {
+    border: 1px solid rgba(216,184,117,.6);
+    border-radius: 12px;
+    padding: 18px 5px;
+    background: rgba(255,255,255,.05);
+}
+
+.timer strong {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: clamp(2rem, 9vw, 3.5rem);
+    color: #d8b875;
+}
+
+.timer span {
+    font-size: .58rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.countdown-message {
+    margin-top: 30px;
+    color: #f7efdf;
+}
