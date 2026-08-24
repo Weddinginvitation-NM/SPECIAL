@@ -1138,3 +1138,265 @@ h1,h2,h3,.couple {
         "Noto Serif Devanagari",
         serif;
 }
+/* =================================
+   PREMIUM SCRATCH REVEAL
+================================= */
+
+.scratch-section {
+
+    min-height: 100svh;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(216,184,117,.15),
+            transparent 30%
+        ),
+        #783c31;
+
+    color: #f7efdf;
+
+    padding:
+        80px 20px;
+}
+
+
+/* Heading */
+
+.scratch-heading {
+
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+
+.scratch-heading h2 {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(3rem, 13vw, 5rem);
+
+    font-weight: 500;
+
+    margin: 5px 0 12px;
+
+    color: #f7efdf;
+}
+
+
+.scratch-heading p:last-child {
+
+    line-height: 1.7;
+
+    font-size: 14px;
+
+    color: #d8b875;
+}
+
+
+/* Scratch card */
+
+.scratch-card {
+
+    width:
+        min(88vw, 380px);
+
+    height: 450px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 25px 60px
+        rgba(30,10,5,.35);
+
+    border:
+        2px solid #d8b875;
+}
+
+
+/* Revealed card */
+
+.scratch-reveal {
+
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(216,184,117,.22),
+            transparent 55%
+        ),
+
+        #a9573f;
+
+    padding: 30px;
+
+    color: #fff8e8;
+}
+
+
+/* Decorative inner border */
+
+.scratch-reveal::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 12px;
+
+    border:
+        1px solid
+        rgba(216,184,117,.75);
+
+    pointer-events: none;
+}
+
+
+/* Ornament */
+
+.scratch-ornament {
+
+    color: #d8b875;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+
+.scratch-ornament.bottom {
+
+    margin-top: 25px;
+
+    margin-bottom: 0;
+
+    font-size: 18px;
+}
+
+
+/* Small heading */
+
+.revealed-small {
+
+    letter-spacing:
+        .3em;
+
+    font-size: 10px;
+
+    color: #f0d59a;
+
+    margin-bottom: 15px;
+}
+
+
+/* Date */
+
+.scratch-reveal strong {
+
+    font-family:
+        "Cormorant Garamond",
+        serif;
+
+    font-size:
+        clamp(4rem, 18vw, 6rem);
+
+    line-height: .72;
+
+    font-weight: 600;
+
+    color: #fff8e8;
+}
+
+
+.scratch-reveal strong span {
+
+    font-size: .28em;
+
+    letter-spacing:
+        .25em;
+
+    vertical-align: middle;
+
+    color: #d8b875;
+}
+
+
+/* Couple */
+
+.scratch-heart {
+
+    margin-top: 35px;
+
+    font-size: 12px;
+
+    letter-spacing:
+        .2em;
+
+    color: #f7efdf;
+}
+
+
+.scratch-heart span {
+
+    color: #d8b875;
+
+    font-size: 20px;
+
+    margin: 0 7px;
+}
+
+
+/* Canvas */
+
+#scratchCanvas {
+
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    cursor: pointer;
+
+    touch-action: none;
+}
+
+
+/* Scratch hint */
+
+.scratch-tip {
+
+    margin-top: 25px;
+
+    font-size: 11px;
+
+    letter-spacing: .1em;
+
+    color: #e6c98d;
+
+    text-align: center;
+}
