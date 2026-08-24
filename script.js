@@ -264,7 +264,7 @@ if (canvas) {
 ====================== */
 
 const music = document.getElementById("weddingMusic");
-const musicBtn = document.getElementById("musicBtn");
+const musicBtn = document.getElementById("musicToggle");
 
 if (music && musicBtn) {
 
