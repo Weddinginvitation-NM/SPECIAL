@@ -258,3 +258,28 @@ if (canvas) {
         }
     );
 }
+
+/* =========================
+   WEDDING MUSIC
+========================= */
+
+const music = document.getElementById("weddingMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+if (music && musicBtn) {
+
+    musicBtn.addEventListener("click", function () {
+
+        if (music.paused) {
+            music.play();
+            musicBtn.innerHTML = "❚❚";
+            musicBtn.classList.add("playing");
+        } else {
+            music.pause();
+            musicBtn.innerHTML = "♫";
+            musicBtn.classList.remove("playing");
+        }
+
+    });
+
+}
