@@ -299,3 +299,29 @@ function updateCountdown() {
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
+// SHARE INVITATION
+
+const shareBtn = document.getElementById("shareBtn");
+
+if (shareBtn) {
+  shareBtn.addEventListener("click", async function () {
+
+    const shareData = {
+      title: "Nikita & Mahendra Wedding Invitation",
+      text: "💍 Nikita & Mahendra ki shaadi ka invitation ❤️",
+      url: window.location.href
+    };
+
+    try {
+      if (navigator.share) {
+        await navigator.share(shareData);
+      } else {
+        await navigator.clipboard.writeText(window.location.href);
+        alert("Invitation link copied ❤️");
+      }
+    } catch (error) {
+      console.log("Share cancelled");
+    }
+
+  });
+}
