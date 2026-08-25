@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#a9573f">
+  <title>Nikita & Mahendra | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="music-toggle" id="musicToggle" aria-label="Toggle music">♪</div>
+
+  <!-- Opening -->
+  <section class="opening" id="opening">
+    <div class="heritage-lines"></div>
+    <div class="envelope">
+      <div class="seal">N ♥ M</div>
+      <div class="envelope-top"></div>
+      <div class="envelope-body">
+        <p class="eyebrow">A WEDDING INVITATION</p>
+        <h1>Nikita <span>&</span> Mahendra</h1>
+        <p>With love, blessings & togetherness</p>
+        <button id="openBtn">Open Invitation</button>
+      </div>
+    </div>
+  </section>
+
+  <main id="mainContent" class="hidden">
+
+    <!-- Hero -->
+    <section class="hero section">
+      <div class="ornament">॥ श्री गणेशाय नमः ॥</div>
+      <p class="eyebrow">चंदवानी परिवार</p>
+      <h2>आमंत्रण</h2>
+      <div class="gold-divider"><span>✦</span></div>
+      <p class="intro">With immense joy and warm blessings, we invite you to celebrate the wedding of</p>
+      <h3 class="couple">Nikita <span>&</span> Mahendra</h3>
+      <p class="date">15 DECEMBER 2026 · TUESDAY</p>
+      <div class="scroll-hint">SCROLL TO DISCOVER ↓</div>
+    </section>
+
+    <!-- Scratch -->
+    <section class="scratch-section section">
+      <p class="eyebrow">A beautiful celebration awaits</p>
+      <h2>Scratch to Reveal</h2>
+      <div class="scratch-card">
+        <div class="reveal">
+          <p>YOU'RE INVITED</p>
+          <strong>15 DECEMBER<br>2026</strong>
+          <span>NIKITA ♥ MAHENDRA</span>
+        </div>
+        <canvas id="scratchCanvas"></canvas>
+      </div>
+    </section>
+
+    <!-- Invitation -->
+    <section class="invitation section">
+      <div class="paper-card">
+        <div class="ornament">॥ श्री गणेशाय नमः ॥</div>
+        <p class="eyebrow">सप्रेम निमंत्रण</p>
+        <h2>प्रिय भैया-भाभी एवं स्नेहीजन</h2>
+        <p>
+          हमारी प्यारी निकिता के शुभ विवाह के अवसर पर आयोजित
+          मांगलिक कार्यक्रमों में आपकी उपस्थिति, आशीर्वाद और स्नेह
+          हमारे लिए अत्यंत महत्वपूर्ण है। कृपया सपरिवार पधारकर
+          नवविवाहित जोड़े को अपना आशीर्वाद प्रदान करें।
+        </p>
+        <div class="gold-divider"><span>✦</span></div>
+        <p class="closing-line">आइए, मिलकर खुशियाँ मनाएँ और इस शुभ अवसर को यादगार बनाएँ।</p>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="events section">
+      <p class="eyebrow">शुभ कार्यक्रम</p>
+      <h2>Wedding Events</h2>
+      <div class="event-grid">
+        <article class="event-card">
+          <div class="event-date">14 <small>DEC</small></div>
+          <h3>सत्संग</h3>
+          <p>सुबह 11 बजे</p>
+        </article>
+        <article class="event-card">
+          <div class="event-date">14 <small>DEC</small></div>
+          <h3>साढ़ / हल्दी</h3>
+          <p>दोपहर 1 बजे</p>
+        </article>
+        <article class="event-card">
+          <div class="event-date">14 <small>DEC</small></div>
+          <h3>प्रीतिभोज</h3>
+          <p>दोपहर 1 से 5 बजे</p>
+        </article>
+        <article class="event-card featured">
+          <div class="event-date">15 <small>DEC</small></div>
+          <h3>विवाह समारोह</h3>
+          <p>मंगलमय शुभ दिवस</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Venue -->
+    <section class="venue section">
+      <p class="eyebrow">स्थान</p>
+      <h2>Where We Celebrate</h2>
+      <div class="venue-card">
+        <div class="venue-icon">⌂</div>
+        <h3>सिंधु भवन</h3>
+        <p>बालाघाट</p>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Sindhu+Bhawan+Balaghat" target="_blank" rel="noopener">View Location ↗</a>
+      </div>
+    </section>
+
+    <!-- Countdown -->
+    <section class="countdown section">
+      <p class="eyebrow">The big day</p>
+      <h2>Counting The Moments</h2>
+      <div class="timer">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <!-- Closing -->
+    <section class="closing section">
+      <div class="ornament">✦</div>
+      <p class="eyebrow">With love</p>
+      <h2>Nikita <span>&</span> Mahendra</h2>
+      <p>आपका स्नेह, आशीर्वाद और उपस्थिति हमारे इस शुभ अवसर को और भी खास बनाएगी।</p>
+      <button class="share-btn" id="shareBtn">Share Invitation</button>
+      <p class="family">चंदवानी परिवार · पंजवानी परिवार</p>
+    </section>
+
+  </main>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/music/wedding-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
